@@ -8,15 +8,15 @@ import {
 
 import Form from '../components/Form';
 import Logo from '../components/Logo';
-const Login = () => {
+const Signup = () => {
     return (
           <View style={styles.container}>
   
           <Logo />
-          <Form type='Login'/>
+          <Form type='Signup'/>
           <View style={styles.signupTextCont}>
-                <Text style={styles.signupText}>Pas encore de compte ?</Text>
-                <Text style={styles.signupButton}>inscivez vous!</Text>
+                <Text style={styles.signupText}>Deja un compte ?</Text>
+                <Text style={styles.signupButton}>Connectez vous!</Text>
           </View>
   
           </View>
@@ -56,4 +56,4 @@ const Login = () => {
 });
 
   
-  export default Login;
+  export default Signup;
