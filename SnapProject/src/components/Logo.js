@@ -1,12 +1,13 @@
-import React, {Fragment} from 'react';
 import {
   StyleSheet,
   View,
   Text,
   Image,
 } from 'react-native';
+import React, {Component} from 'react';
 
-const Logo = () => {
+export default class Logo extends Component{
+  render() {
     return (
          <View style={styles.container}>
              <Image style={{width: 40, height: 70}}
@@ -17,7 +18,9 @@ const Logo = () => {
              </Text>
 
          </View> 
-    )
+    );
+
+  }
   }
 
   const styles = StyleSheet.create({
@@ -36,5 +39,3 @@ const Logo = () => {
     }
     
 });
-
-  export default Logo;

@@ -17,7 +17,8 @@ import {
   StatusBar,
 } from 'react-native';
 
-const App = () => {
+export default class App extends Component{
+render() {
   return (
         <View style={styles.container}>
 
@@ -30,7 +31,9 @@ const App = () => {
 
         </View>
   );
-};
+}
+
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -41,5 +44,3 @@ const styles = StyleSheet.create({
   },
 
 });
-
-export default App;

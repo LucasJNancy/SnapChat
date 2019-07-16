@@ -3,29 +3,29 @@ import {
   StyleSheet,
   View,
   Text,
-  StatusBar,
 } from 'react-native';
 
 import Form from '../components/Form';
 import Logo from '../components/Logo';
-export default class Signup extends Component {
-  render(){
-    return (
-          <View style={styles.container}>
-  
-          <Logo />
-          <Form type='Signup'/>
-          <View style={styles.signupTextCont}>
-                <Text style={styles.signupText}>Deja un compte ?</Text>
-                <Text style={styles.signupButton}>Connectez vous!</Text>
-          </View>
-  
-          </View>
-    );
-  };
 
-  }
-
+export default class Login extends Component {
+    render() {
+        return (
+            <View style={styles.container} >
+    
+            <Logo />
+        
+            <Form type='Login'/>
+            
+            <View style={styles.signupTextCont}>
+                  <Text style={styles.signupText}>Pas encore de compte ?</Text>
+                  <Text style={styles.signupButton}>inscivez vous!</Text>
+            </View>
+            </View>
+    
+      );
+    }
+}
 
   const styles = StyleSheet.create({
     container: {

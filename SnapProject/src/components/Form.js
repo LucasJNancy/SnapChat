@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Component} from 'react';
 import {
   StyleSheet,
   View,
@@ -7,7 +7,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-const Form = () => {
+export default class Form extends Component{
+  render() {
     return (
          <View style={styles.container}>
              <TextInput style={styles.inputBox} 
@@ -22,10 +23,12 @@ const Form = () => {
              secureTextEntry={true} />
 
              <TouchableOpacity style={styles.button}>
-                 <Text style={styles.buttonText}>{this.PaymentResponse.type}</Text>
+                 <Text style={styles.buttonText}>Login</Text>
              </TouchableOpacity>
          </View> 
-    )
+    );
+  }
+
   }
 
   const styles = StyleSheet.create({
@@ -58,6 +61,4 @@ const Form = () => {
         color:'white',
         textAlign:'center',
     }
-});
-
-export default Form;
+}); 
